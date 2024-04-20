@@ -3,9 +3,9 @@ import { Container, LinkContent, MultipleNavContainer, NavItem, Paragraph } from
 
 export const Header: React.FC = () => {
   const location = useLocation();
-  const isTransparent: boolean = location.pathname === '/' ? true : false;
+  const istransparent: string = location.pathname === '/' ? "home" : "extra";
   return (
-    <Container isTransparent={isTransparent}>
+    <Container istransparent={istransparent}>
       <LinkContent to = "/">
         <NavItem><Paragraph>Toy Document Labeling</Paragraph></NavItem>
       </LinkContent>

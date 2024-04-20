@@ -5,7 +5,7 @@ export const Paragraph = styled.p`
   font-size: 20px;
 `
 
-export const Container = styled.header<{isTransparent: boolean}>`
+export const Container = styled.header<{istransparent: string}>`
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -14,8 +14,8 @@ export const Container = styled.header<{isTransparent: boolean}>`
   width: 100%;
   height: 100px;
   color: white;
-  background-color: ${({ isTransparent }) => !isTransparent && `${`rgb(42 51 45)`}` };
-  box-shadow: ${({isTransparent}) => !isTransparent && `5px 5px 5px`}
+  background-color: ${({ istransparent }) => istransparent !="home" ? `${`rgb(42 51 45)`}` :  `${`rgba(42 51 45 0)`}` };
+  box-shadow: ${({istransparent}) => istransparent !="home" && `5px 5px 5px`}
 `
 
 export const LinkContent = styled(Link)`

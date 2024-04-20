@@ -10,6 +10,7 @@ export const Container = styled.footer`
   width: 100%;
   color: white;
   background-color: rgb(60, 60, 60);
+  box-shadow: 5px 5px 10px;
 `
 
 export const Paragraph = styled.p`

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Button, CardTitile, Container, LinkContent, Paragraph, Strong, StyledButton } from "./styles"
 import { DocumentContext } from "../../contexts"
 import { DocumentsContextType, DocumentType} from "../../consts";
@@ -39,6 +39,9 @@ export const DocumentDetailComponent: React.FC = () => {
     modalOpen(true);
   }
 
+  useEffect(() => {
+    setLabels(document.labels || []);
+  }, [document])
   return (
     <> {
       document && (

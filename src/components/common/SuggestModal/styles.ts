@@ -52,7 +52,13 @@ export const SuggestItem = styled.button`
 export const Button = styled.button`
   border: none;
   padding: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #0c0d0e;
   border-radius: 2rem;
+  &:hover {
+    background-color: #3a3c3f;
+  }
   `
 
 export const CheckMark = styled.img`

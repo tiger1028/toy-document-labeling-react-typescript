@@ -28,8 +28,8 @@ export const LinkContent = styled.a`
 `
 
 export const StyledButton = styled.button`
-  background-color: #6a5acd;
-  color: #ff6347;
+  background-color: #1f1f1f;
+  color: #fbfbfb;
   width: 200px;
   font-size: 20px;
   padding: 1em;
@@ -37,8 +37,7 @@ export const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
   &:hover {
-    background-color: #ff6347;
-    color: #6a5acd;
+    background-color: #373535;
   }
   @keyframes moving {
     0% {transform: translateY(0px)}
@@ -48,32 +47,18 @@ export const StyledButton = styled.button`
   animation: moving 2s ;
   animation-iteration-count: infinite;
 `
-export const InputContent = styled.div`
-  width: 100%;
-  border-radius: 10px;
-  height: 150px;
-  margin-top: 100px;
-  background-color: black;
-`
-export const Input = styled.input`
-  width: 150px;
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-`
 
 export const Button = styled.button`
   margin-top: 50px;
-  background-color: #6a5acd;
+  background-color: #1f1f1f;
   margin-left: 30px;
-  color: #ff6347; 
+  color: #fbfbfb; 
   width: 100px;
   padding: 1em;
   cursor: pointer;
   border: none;
   border-radius: 10px;
   &:hover {
-    background-color: #ff6347;
-    color: #6a5acd;
+    background-color: #373535;
   }
 `

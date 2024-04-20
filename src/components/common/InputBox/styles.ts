@@ -35,6 +35,7 @@ export const Item = styled.div`
     font-size: 10px;
     font-weight: bold;
     background-color: #7b7b83;
+    cursor: pointer;
     &:hover {
       background-color: #4e4e5b;
     }
